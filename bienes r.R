@@ -2,7 +2,7 @@
 #Install packages
 
 install.packages ("readxl") 
-library(readxl) #cargar el paquete 
+library(readxl) 
 bienes <- read_excel("Desktop/BIENES.xlsx")
 
 install.packages("ggplot2")
@@ -16,7 +16,6 @@ View(bienes)
 summary(bienes)
 
 #Property Types: Let's count how many properties are listed for: HOUSE | APARTMENT | STORE |INDUSTRIAL | OFFICE
-
 
 resultados_casa <- bienes %>% count(Tipo == "Casa")
 print(resultados_casa)
