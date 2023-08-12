@@ -55,7 +55,7 @@ average_general <-
 print(average_general)
 
 
-#Average Sales: Now we can filter the sales category and let's check the average sales
+#Average Sales: Now we can filter the sales category by property type and let's check the average sales
 
 filas_categoria_B <- filter(bienes, Tipo == "Casa", Operación == "Venta")
 print(filas_categoria_B)
@@ -98,7 +98,6 @@ print(Oficina_tabla)
 promedio_ventas_oficina <- 
   mean(filas_categoria_D$`Precio Venta`)
 print(promedio_ventas_oficina)
-
 
 filas_categoria_E <- filter(bienes, Tipo == "Industrial", Operación == "Venta")
 print(filas_categoria_E)
