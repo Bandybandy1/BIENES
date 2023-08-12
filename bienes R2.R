@@ -2,7 +2,7 @@
 #Install packages
 
 install.packages ("readxl") 
-library(readxl) #cargar el paquete 
+library(readxl)
 bienes <- read_excel("Desktop/BIENES.xlsx")
 
 install.packages("ggplot2")
